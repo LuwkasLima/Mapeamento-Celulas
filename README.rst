@@ -1,4 +1,7 @@
-Mapas de Vista
+Mapas de Vista - Mapeamento Celulas
+By Lucas Lima and BRASA
 ==============
+
+This template is based on the Mapas de Vista from Hacklab. It was modified to be used by the ONG Celulas de Transformação in its web portal.
 
 
