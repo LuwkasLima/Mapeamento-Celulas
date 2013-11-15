@@ -1,5 +1,8 @@
 <?php
 
+//Add the files related to CustomPostType - Adiciona os arquivos de CustomPostType para Grupos
+require_once (get_stylesheet_directory() . '/grupos/custom-grupos.php');
+
 // includes
 include('admin/maps.php');
 include('admin/pins.php');
