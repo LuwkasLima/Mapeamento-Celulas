@@ -12,19 +12,19 @@ add_action( 'init', 'type_post_grupos' );
      * Labels customizados para o tipo de post
      */
     $labels = array(
-	    'name' => _x('Grupos ou Nações', 'post type general name'),
-	    'singular_name' => _x('Grupo ou Nação', 'post type singular name'),
-	    'add_new' => _x('Novo Grupo ou Nação', 'projeto'),
-	    'add_new_item' => __('Novo Grupo ou Nação'),
-	    'edit_item' => __('Editar Grupo ou Nação'),
-	    'new_item' => __('Novo Grupo ou Nação'),
-	    'all_items' => __('Todos Grupos ou Nações'),
-	    'view_item' => __('Ver Grupo ou Nação'),
-	    'search_items' => __('Procurar Grupos ou Nações'),
-	    'not_found' =>  __('Nenhum Grupo ou Nação encontrado'),
-	    'not_found_in_trash' => __('Nenhum Grupo ou Nação encontrado no lixo'),
+	    'name' => _x('Celulas/Ações', 'post type general name'),
+	    'singular_name' => _x('Celula/Ação', 'post type singular name'),
+	    'add_new' => _x('Nova Celula/Ação', 'projeto'),
+	    'add_new_item' => __('Nova Celula/Ação'),
+	    'edit_item' => __('Editar Celula/Ação'),
+	    'new_item' => __('Nova Celula/Ação'),
+	    'all_items' => __('Todas Celulas/Ações'),
+	    'view_item' => __('Ver Celula/Ação'),
+	    'search_items' => __('Procurar Celulas/Ações'),
+	    'not_found' =>  __('Nenhuma Celula/Ação encontrado'),
+	    'not_found_in_trash' => __('Nenhuma Celula/Ação encontrada no lixo'),
 	    'parent_item_colon' => '',
-	    'menu_name' => 'Grupos ou Nações'
+	    'menu_name' => 'Celulas/Ações'
     );
     
         $args = array(
@@ -44,23 +44,23 @@ add_action( 'init', 'type_post_grupos' );
 			register_post_type( 'grupos' , $args );
 			
 					/**
-		* Registamos a categoria de  para o tipo de post Grupos ou Naçães
+		* Registamos a categoria de  para o tipo de post Celulas ou Açães
 		*/
 			register_taxonomy( 'grupos_category', array( 'grupos' ), array(
 				'hierarchical' => true,
-				'label' => __( 'Grupos ou Nações' ),
+				'label' => __( 'Celulas/Ações' ),
 				'labels' => array( // Labels customizadas
-				'name' => _x( 'Categorias de Grupos ou Nações', 'taxonomy general name' ),
-				'singular_name' => _x( 'Grupo ou Nação', 'taxonomy singular name' ),
-				'search_items' =>  __( 'Pesquisar Grupos ou Nações' ),
-				'all_items' => __( 'Todos Grupos ou Nações' ),
+				'name' => _x( 'Categorias de Celulas/Ações', 'taxonomy general name' ),
+				'singular_name' => _x( 'Celula/Ação', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Pesquisar Celulas/Ações' ),
+				'all_items' => __( 'Todas Celulas/Ações' ),
 				'parent_item' => __( 'Parent Category' ),
 				'parent_item_colon' => __( 'Parent Category:' ),
-				'edit_item' => __( 'Editar Grupo ou Nação' ),
+				'edit_item' => __( 'Editar Celula/Ação' ),
 				'update_item' => __( 'Update Category' ),
 				'add_new_item' => __( 'Adicionar Nova Categoria' ),
 				'new_item_name' => __( 'Novo Nome da Categoria' ),
-				'menu_name' => __( 'Categorias de Grupos ou Nações' ),
+				'menu_name' => __( 'Categorias de Celulas/Ações' ),
 			),
 				'show_ui' => true,
 				'show_in_tag_cloud' => true,
@@ -100,7 +100,7 @@ function my_meta_init()
 
 	foreach (array('grupos') as $type) 
 	{
-		add_meta_box('my_all_meta', 'Informações do Grupo ou Nação', 'my_meta_setup', $type, 'normal', 'high');
+		add_meta_box('my_all_meta', 'Informações da Celula/Ação', 'my_meta_setup', $type, 'normal', 'high');
 	}
 	
 	add_action('save_post','my_meta_save');

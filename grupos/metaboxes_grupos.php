@@ -21,7 +21,7 @@
     <label>E-mail Oficial</label>
 	<p>
 		<input type="text" name="_my_meta[ag_email]" value="<?php if(!empty($meta['ag_email'])) echo $meta['ag_email']; ?>"/>
-		<span>Coloque o e-mail de contato do Grupo ou Nação</span>
+		<span>Coloque o e-mail de contato do Grupo ou A&ccedil;ao</span>
 	</p>
     </div>
 	
@@ -30,7 +30,7 @@
     <label>Integrantes</label>
 	<p>
 		<input type="text" name="_my_meta[ag_integrantes]" value="<?php if(!empty($meta['ag_integrantes'])) echo $meta['ag_integrantes']; ?>"/>
-		<span>Coloque a quantidade atual de integrantes do Grupo ou Nação</span>
+		<span>Coloque a quantidade atual de integrantes do Grupo ou A&ccedil;ao</span>
 	</p>
     </div>
 	
