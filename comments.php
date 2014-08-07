@@ -1,7 +1,7 @@
 <?php if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) die ('Please do not load this page directly. Thanks!'); ?>
 <?php if(post_password_required()) return; ?>
 <?php
-// add a microid to all the comments
+// add a microid to all the comments teste
 function comment_add_microid($classes)
 {
   $c_email = get_comment_author_email();
